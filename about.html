@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | FaZe Clan</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="webpage">
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="back">
+            <i class="fas fa-arrow-left"></i> Back To Index
+        </a>
+        <h1><i class="fas fa-circle-info"></i> About Us</h1>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html"><i class="fas fa-house"></i> Home</a>
+        <a href="about.html" class="active"><i class="fas fa-circle-info"></i> About</a>
+        <a href="calculator.html"><i class="fas fa-envelope"></i> Calculator</a>
+        <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        <a href="ClassAttendance.html"><i class="fas fa-clipboard-user"></i> Attendance</a>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <h2>Who We Are</h2>
+        <p>
+            FaZe Clan is a global esports and entertainment organization built at the
+            intersection of competitive gaming, lifestyle, and digital culture.
+            Known for pushing boundaries, FaZe represents innovation, passion,
+            and elite performance in the gaming industry.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+            To redefine gaming culture by combining world-class competition,
+            influential content creation, and a community-driven mindset.
+            We aim to inspire the next generation of gamers worldwide.
+        </p>
+
+        <h3>What We Do</h3>
+        <ul>
+            <li><i class="fas fa-gamepad"></i> Compete in top-tier esports tournaments</li>
+            <li><i class="fas fa-video"></i> Create high-quality gaming & lifestyle content</li>
+            <li><i class="fas fa-users"></i> Build strong gaming communities</li>
+            <li><i class="fas fa-globe"></i> Expand esports culture globally</li>
+        </ul>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="mailto:yourgmail@gmail.com">
+            <i class="fas fa-envelope"></i> Gmail
+        </a>
+        <a href="https://store.steampowered.com" target="_blank">
+            <i class="fab fa-steam"></i> Steam
+        </a>
+        <a href="https://www.twitch.tv" target="_blank">
+            <i class="fab fa-twitch"></i> Twitch
+        </a>
+    </footer>
+
+</div>
+
+<!-- PAGE SCRIPT -->
+<script>
+$(document).ready(function () {
+
+    // Page fade-in
+    $(".webpage").hide().fadeIn(1000);
+
+    // Slight lift hover effect for list items
+    $(".content ul li").hover(
+        function () {
+            $(this).css({
+                transform: "translateX(5px)",
+                color: "#ffffff"
+            });
+        },
+        function () {
+            $(this).css({
+                transform: "translateX(0)",
+                color: "#dddddd"
+            });
+        }
+    );
+
+});
+</script>
+
+</body>
+</html>

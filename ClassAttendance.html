@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FaZe Attendance</title>
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="webpage">
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html" class="back">
+    <i class="fas fa-arrow-left"></i> Back To Index
+  </a>
+  <h1><i class="fas fa-clipboard-user"></i> Class Attendance</h1>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html"><i class="fas fa-house"></i> Home</a>
+  <a href="about.html"><i class="fas fa-circle-info"></i> About</a>
+  <a href="calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+  <a href="login.html"><i class="fas fa-user"></i> Login</a>
+  <a href="ClassAttendance.html"><i class="fas fa-clipboard-user"></i> Attendance</a>
+</nav>
+
+<!-- CONTENT -->
+<main class="content">
+
+<h2>Student Attendance</h2>
+<p>Add students and track your class list.</p>
+
+<div class="attendance-container">
+
+  <!-- FORM -->
+  <div class="attendance-form">
+      <h3>Add Student</h3>
+
+      <input type="text" id="firstName" placeholder="First Name *">
+      <input type="text" id="middleInitial" maxlength="1" placeholder="Middle Initial">
+      <input type="text" id="lastName" placeholder="Last Name *">
+      <input type="number" id="age" placeholder="Age *">
+      <input type="email" id="EmailCA" placeholder="Email *">
+
+      <button id="addStudent">
+        <i class="fas fa-plus"></i> Add Student
+      </button>
+  </div>
+
+  <!-- LIST -->
+  <div class="attendance-list">
+      <h3>Attendance List</h3>
+      <ol id="list"></ol>
+  </div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="#"><i class="fab fa-steam"></i> Steam</a>
+</footer>
+
+</div>
+
+<script src="ClassAttendance.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,391 @@
+/* =========================================
+   FAZE CLAN ESPORTS THEME
+   Dark | Red | Minimal | Aggressive
+========================================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #050505, #141414);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+.webpage {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #0b0b0b;
+    border: 3px solid #e10600;
+    box-shadow: 0 0 35px rgba(225, 6, 0, 0.35);
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: linear-gradient(90deg, #000000, #1a1a1a);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 4px solid #e10600;
+}
+
+.header h1 {
+    color: #e10600;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.header h1 i {
+    color: #ffffff;
+}
+
+/* BACK LINK */
+.back {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.back:hover {
+    color: #e10600;
+}
+
+/* ================= NAV ================= */
+.nav {
+    background: #111111;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.nav a i {
+    color: #e10600;
+    margin-right: 6px;
+}
+
+.nav a:hover {
+    color: #e10600;
+    text-shadow: 0 0 8px rgba(225, 6, 0, 0.8);
+}
+
+/* ================= CONTENT ================= */
+.content {
+    padding: 35px;
+}
+
+.content h2 {
+    color: #e10600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+/* SUBHEADINGS */
+.content h3 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    border-left: 4px solid #e10600;
+}
+
+/* LIST */
+.content ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.content ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    color: #dddddd;
+}
+
+.content ul li i {
+    color: #e10600;
+    margin-right: 10px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #111111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px solid #e10600;
+}
+
+.footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.footer a i {
+    color: #e10600;
+    margin-right: 6px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+/* ================= LOGIN PAGE ================= */
+.login-page-box {
+    max-width: 360px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #0b0b0b;
+    border: 3px solid #e10600;
+    box-shadow: 0 0 35px rgba(225, 6, 0, 0.5);
+    text-align: center;
+}
+
+.login-page-box h2 {
+    color: #e10600;
+    margin-bottom: 25px;
+}
+
+.login-page-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.login-page-box input:focus {
+    outline: none;
+    border-color: #e10600;
+}
+
+.login-page-box button {
+    width: 100%;
+    padding: 12px;
+    background: #e10600;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-page-box button:hover {
+    background: #ff1a14;
+}
+
+/* ================= CALCULATOR ================= */
+.calculator {
+    max-width: 360px;
+    margin: 60px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #070707, #121212);
+    border: 3px solid #e10600;
+    box-shadow:
+        0 0 20px rgba(225, 6, 0, 0.35),
+        inset 0 0 20px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+/* Accent line */
+.calculator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #e10600, transparent);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 18px;
+    background: linear-gradient(145deg, #0a0a0a, #151515);
+    border: 2px solid #222;
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-align: right;
+    padding: 12px;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.8);
+}
+
+/* GRID */
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* BUTTON BASE */
+.calc-grid button {
+    padding: 16px;
+    font-size: 1.15rem;
+    background: linear-gradient(145deg, #101010, #1b1b1b);
+    color: #fff;
+    border: 1px solid #222;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow:
+        0 4px 0 #000,
+        inset 0 0 0 rgba(255,255,255,0);
+}
+
+/* HOVER */
+.calc-grid button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 6px 0 #000,
+        0 0 12px rgba(225, 6, 0, 0.6);
+}
+
+/* ACTIVE PRESS */
+.calc-grid button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #000;
+}
+
+/* NUMBERS */
+.num {
+    color: #ffffff;
+}
+
+/* OPERATORS */
+.operator {
+    color: #e10600;
+    text-shadow: 0 0 8px rgba(225, 6, 0, 0.7);
+}
+
+/* CLEAR / DELETE */
+.clear,
+.delete {
+    background: linear-gradient(145deg, #1a1a1a, #242424);
+    color: #e10600;
+}
+
+/* EQUAL BUTTON */
+.equal {
+    background: linear-gradient(145deg, #e10600, #b80000);
+    color: #ffffff;
+    font-size: 1.3rem;
+    grid-row: span 2;
+    box-shadow:
+        0 6px 0 #7a0000,
+        0 0 15px rgba(225, 6, 0, 0.8);
+}
+
+.equal:hover {
+    box-shadow:
+        0 8px 0 #7a0000,
+        0 0 25px rgba(225, 6, 0, 1);
+}
+
+/* ZERO */
+.zero {
+    grid-column: span 2;
+}
+
+/* ================= ATTENDANCE ================= */
+
+.attendance-container{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.attendance-form,
+.attendance-list{
+    flex:1;
+    min-width:280px;
+    background:#111;
+    padding:25px;
+    border:2px solid #e10600;
+    box-shadow:0 0 20px rgba(225,6,0,0.3);
+}
+
+.attendance-form h3,
+.attendance-list h3{
+    color:#e10600;
+    margin-bottom:15px;
+}
+
+.attendance-form input{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    background:#0b0b0b;
+    border:1px solid #333;
+    color:white;
+}
+
+.attendance-form input:focus{
+    border-color:#e10600;
+    outline:none;
+}
+
+.attendance-form button{
+    width:100%;
+    padding:12px;
+    background:#e10600;
+    border:none;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.attendance-form button:hover{
+    background:#ff1a14;
+}
+
+/* LIST ITEMS */
+#list li{
+    padding:12px;
+    border-bottom:1px solid #222;
+}

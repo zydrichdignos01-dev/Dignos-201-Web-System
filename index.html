@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaZe Clan </title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+  
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="webpage">
+
+    <header class="header">
+        <a href="index.html" class="back">
+            <i class="fas fa-arrow-left"></i> Back To Index
+        </a>
+        <h1><i class="fas fa-gamepad"></i> FaZe Clan</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html"><i class="fas fa-house"></i> Home</a>
+        <a href="about.html"><i class="fas fa-circle-info"></i> About</a>
+        <a href="calculator.html"><i class="fas fa-envelope"></i> Calculator</a>
+        <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        <a href="ClassAttendance.html"><i class="fas fa-clipboard-user"></i> Attendance</a>
+    </nav>
+
+    <main class="content">
+        <h2>About FaZe Clan</h2>
+        <p>
+            FaZe Clan is a professional esports and entertainment organization
+            known worldwide for competitive gaming, content creation, and
+            lifestyle branding.
+        </p>
+
+        <h3>Key Facts</h3>
+        <ul>
+            <li><i class="fas fa-trophy"></i> Competes in major esports titles</li>
+            <li><i class="fas fa-users"></i> Home to professional gamers & creators</li>
+            <li><i class="fas fa-globe"></i> Global esports organization</li>
+            <li><i class="fas fa-video"></i> Famous for YouTube & streaming content</li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="mailto:yourgmail@gmail.com">
+            <i class="fas fa-envelope"></i> Gmail
+        </a>
+        <a href="https://store.steampowered.com" target="_blank">
+            <i class="fab fa-steam"></i> Steam
+        </a>
+        <a href="https://www.twitch.tv" target="_blank">
+            <i class="fab fa-twitch"></i> Twitch
+        </a>
+    </footer>
+
+</div>
+
+<!-- jQuery Script -->
+<script>
+$(document).ready(function () {
+
+    // Fade in page
+    $(".webpage").hide().fadeIn(1000);
+
+    // Navigation hover animation
+    $(".nav a").hover(
+        function () {
+            $(this).animate({ paddingLeft: "25px" }, 200);
+        },
+        function () {
+            $(this).animate({ paddingLeft: "15px" }, 200);
+        }
+    );
+
+});
+</script>
+
+</body>
+</html>
